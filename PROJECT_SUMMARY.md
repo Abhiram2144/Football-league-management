@@ -58,7 +58,7 @@ Football-league-management/
 
 ## 🎯 User Story Implementation
 
-### Member A (Mahir) - League & Team Management ✅
+### Member A (Neel) - League & Team Management ✅
 | ID | Story | Status |
 |----|-------|--------|
 | A1 | Create League | ✅ Complete |
@@ -71,7 +71,7 @@ Football-league-management/
 | A8 | Export League State | ✅ Complete |
 | A9 | Validate League Configuration | ✅ Complete |
 
-### Member B (Abhishek) - Scheduling Engine ✅
+### Member B (Mahir) - Scheduling Engine ✅
 | ID | Story | Status |
 |----|-------|--------|
 | B1 | Generate Round-Robin Fixtures | ✅ Complete |
@@ -84,7 +84,7 @@ Football-league-management/
 | B8 | Team-Specific Fixture View | ✅ Complete |
 | B9 | Auto-Regenerate Fixtures | ✅ Complete |
 
-### Member C (Neel) - Ranking & Results ✅
+### Member C (Abhishek) - Ranking & Results ✅
 | ID | Story | Status |
 |----|-------|--------|
 | C1 | Record Match Result | ✅ Complete |
