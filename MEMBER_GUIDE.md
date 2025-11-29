@@ -1,8 +1,8 @@
 # Member Quick Reference Guide
 
-## Member A (Mahir) - League & Team Management
+## Member A (Neel) - League & Team Management
 
-**Your folder:** `member_a_mahir/`
+**Your folder:** `member_a_Neel/`
 
 ### Your Responsibilities
 1. League creation and configuration
@@ -17,7 +17,7 @@
 ### Testing Your Code
 ```powershell
 # Quick test
-python -c "from member_a_mahir import LeagueManager; m=LeagueManager(); m.create_league('Test','2024'); print('✓ Works!')"
+python -c "from member_a_Neel import LeagueManager; m=LeagueManager(); m.create_league('Test','2024'); print('✓ Works!')"
 
 # Full integration
 python tests/test_integration.py
@@ -32,9 +32,9 @@ python tests/test_integration.py
 
 ---
 
-## Member B (Abhishek) - Scheduling Engine & Constraints
+## Member B (Mahir) - Scheduling Engine & Constraints
 
-**Your folder:** `member_b_abhishek/`
+**Your folder:** `member_b_Mahir/`
 
 ### Your Responsibilities
 1. Round-robin fixture generation (B1)
@@ -70,9 +70,9 @@ Your `generate_round_robin_pairs()` and `balance_home_away_rotation()` functions
 
 ---
 
-## Member C (Neel) - Ranking, Results & Presentation
+## Member C (Abhishek) - Ranking, Results & Presentation
 
-**Your folder:** `member_c_neel/`
+**Your folder:** `member_c_Abhishek/`
 
 ### Your Responsibilities
 1. Recording match results (C1)
@@ -116,7 +116,7 @@ python src/ui/cli.py
 
 ## Member D (Dhawal) - Diagnostics, Analytics & Testing
 
-**Your folder:** `member_d_dhawal/`
+**Your folder:** `member_d_Dhawal/`
 
 ### Your Responsibilities
 1. Detect scheduling anomalies (D1)
@@ -138,7 +138,7 @@ python src/ui/cli.py
 ### Testing Your Code
 ```powershell
 # Quick test
-python -c "from member_d_dhawal import DiagnosticsEngine; d=DiagnosticsEngine(); print(d.get_diagnostics_summary())"
+python -c "from member_d_Dhawal import DiagnosticsEngine; d=DiagnosticsEngine(); print(d.get_diagnostics_summary())"
 
 # Full demo
 python member_d_demo.py
@@ -162,8 +162,8 @@ Your module includes several complex diagnostic functions:
 
 ### Sample Usage
 ```python
-from member_d_dhawal import DiagnosticsEngine
-from member_a_mahir import LeagueManager
+from member_d_Dhawal import DiagnosticsEngine
+from member_a_Neel import LeagueManager
 
 # Setup
 league_mgr = LeagueManager()
@@ -285,22 +285,22 @@ python src/ui/cli.py
 ### Check Your Code Works
 ```powershell
 # For Member A
-python -c "from member_a_mahir import LeagueManager; print('✓')"
+python -c "from member_a_Neel import LeagueManager; print('✓')"
 
 # For Member B
-python -c "from member_b_abhishek import FixtureScheduler; print('✓')"
+python -c "from member_b_Mahir import FixtureScheduler; print('✓')"
 
 # For Member C
-python -c "from member_c_neel import ResultsManager; print('✓')"
+python -c "from member_c_Abhishek import ResultsManager; print('✓')"
 
 # For Member D
-python -c "from member_d_dhawal import MetricsEngine; print('✓')"
+python -c "from member_d_Dhawal import DiagnosticsEngine; print('✓')"
 ```
 
 ### Run Tests with Coverage
 ```powershell
 pip install pytest pytest-cov
-pytest --cov=member_a_mahir --cov=member_b_abhishek --cov=member_c_neel --cov=member_d_dhawal tests/
+pytest --cov=member_a_Neel --cov=member_b_Mahir --cov=member_c_Abhishek --cov=member_d_Dhawal tests/
 ```
 
 ---
@@ -309,12 +309,12 @@ pytest --cov=member_a_mahir --cov=member_b_abhishek --cov=member_c_neel --cov=me
 
 ### Sprint 1 (27 Nov - 3 Dec)
 **Focus:** Core league, teams, basic fixtures  
-**Primary:** Mahir (A), Abhishek (B)  
+**Primary:** Neel (A), Mahir (B)  
 **Support:** All members review PRs
 
 ### Sprint 2 (4 Dec - 10 Dec)
 **Focus:** Constraints, ranking, tests  
-**Primary:** Neel (C), Dhawal (D)  
+**Primary:** Mahir (B), Dhawal (D)  
 **Support:** All members review PRs
 
 ### Sprint 3 (11 Dec - 17 Dec)
@@ -329,26 +329,24 @@ pytest --cov=member_a_mahir --cov=member_b_abhishek --cov=member_c_neel --cov=me
 
 ## Files Each Member Should Focus On
 
-### Member A (Mahir)
-- ✏️ `member_a_mahir/league_manager.py`
+### Member A (Neel)
+- ✏️ `member_a_Neel/league_manager.py`
 - 📖 `src/domain/league.py`
 - 📖 `src/domain/team.py`
 
-### Member B (Abhishek)
-- ✏️ `member_b_abhishek/fixture_scheduler.py`
+### Member B (Mahir)
+- ✏️ `member_b_Mahir/fixture_scheduler.py`
 - ✏️ `src/scheduling/scheduler.py`
 - 📖 `src/domain/match.py`
 
-### Member C (Neel)
-- ✏️ `member_c_neel/results_manager.py`
+### Member C (Abhishek)
+- ✏️ `member_c_Abhishek/results_manager.py`
 - 📖 `src/domain/table.py`
 - ✏️ `src/ui/cli.py` (presentation logic)
 
 ### Member D (Dhawal)
-- ✏️ `member_d_dhawal/metrics_engine.py`
-- ✏️ `src/metrics/pert.py`
-- ✏️ `src/metrics/cocomo.py`
-- ✏️ `src/metrics/evm.py`
+- ✏️ `member_d_Dhawal/diagnostics_engine.py`
+- ✏️ `src/domain/` (shared models)
 - ✏️ `tests/blackbox/*.py`
 - ✏️ `tests/whitebox/*.py`
 

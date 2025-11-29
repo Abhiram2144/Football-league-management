@@ -4,7 +4,7 @@ CO7095 – Software Measurement & Quality Assurance
 
 Project: Football League Scheduling System
 
-Team Members: Mahir, Abhishek, Neel, Dhawal
+Team Members: Neel, Mahir, Abhishek, Dhawal
 
 Sprints: 1 week each, starting 27 November
 
@@ -38,8 +38,8 @@ All sprints are one week long and begin 27 November. Every sprint includes parti
 
 | Sprint | Dates | Goal | Owner Focus | Stories Planned | Stories Completed |
 |---|---|---|---:|---:|---:|
-| 1 | 27 Nov – 3 Dec | Core league creation, team management, basic fixtures | Mahir & Abhishek (lead) | 12 | TBD |
-| 2 | 4 Dec – 10 Dec | Scheduling constraints, ranking, black-box + white-box tests | Neel & Dhawal (lead) | 12 | TBD |
+| 1 | 27 Nov – 3 Dec | Core league creation, team management, basic fixtures | Neel & Mahir (lead) | 12 | TBD |
+| 2 | 4 Dec – 10 Dec | Scheduling constraints, ranking, black-box + white-box tests | Mahir & Dhawal (lead) | 12 | TBD |
 | 3 | 11 Dec – 17 Dec | Metrics (PERT, COCOMO, EVM), coverage, exports, QA | All Members (collaborative) | 12 | TBD |
 | 4 (Docs) | 18 Dec – 20 Dec | Symbolic & concolic testing, final video & documentation | All Members (finalisation) | - | - |
 
@@ -153,7 +153,7 @@ These retrospectives feed process improvements, which are then implemented in th
 
 All members participate in every sprint; primary ownership rotates but all members review, test and contribute to integration. Below is the canonical set of user stories and the primary member assignment groups (each member remains responsible for their primary area but collaborates broadly):
 
-- Member A — League & Team Management (Lead: Mahir)
+-- Member A — League & Team Management (Lead: Neel)
   - A1 — Create League
   - A2 — Add Team
   - A3 — Validate Duplicate Teams
@@ -164,7 +164,7 @@ All members participate in every sprint; primary ownership rotates but all membe
   - A8 — Export League State
   - A9 — Validate League Configuration Before Scheduling
 
-- Member B — Scheduling Engine & Constraints (Lead: Abhishek)
+-- Member B — Scheduling Engine & Constraints (Lead: Mahir)
   - B1 — Generate Round-Robin Fixtures
   - B2 — Generate Home/Away Rotation
   - B3 — Week-by-Week Schedule Generation
@@ -175,7 +175,7 @@ All members participate in every sprint; primary ownership rotates but all membe
   - B8 — Team-Specific Fixture View
   - B9 — Auto-Regenerate Fixtures After Team Changes
 
-- Member C — Ranking, Results & Presentation (Lead: Neel)
+-- Member C — Ranking, Results & Presentation (Lead: Abhishek)
   - C1 — Record Match Result
   - C2 — Update League Table
   - C3 — Ranking Tie-Breaking Rules

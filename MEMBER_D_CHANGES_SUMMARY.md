@@ -199,16 +199,16 @@ paths = diagnostics.extract_symbolic_paths(function_source, "check_clash")
 ### Files Created/Modified
 
 1. **Created:**
-   - `member_d_dhawal/diagnostics_engine.py` (1,400+ lines)
-   - `member_d_demo.py` (demonstration script)
-   - `member_d_dhawal/README_MEMBER_D.md` (comprehensive documentation)
+  - `member_d_Dhawal/diagnostics_engine.py` (1,400+ lines)
+  - `member_d_demo.py` (demonstration script)
+  - `member_d_Dhawal/README_MEMBER_D.md` (comprehensive documentation)
 
 2. **Modified:**
-   - `member_d_dhawal/__init__.py` (updated imports)
-   - `MEMBER_GUIDE.md` (updated Member D section)
+  - `member_d_Dhawal/__init__.py` (updated imports)
+  - `MEMBER_GUIDE.md` (updated Member D section)
 
 3. **Removed:**
-   - `member_d_dhawal/metrics_engine.py` (old implementation)
+  - `member_d_Dhawal/metrics_engine.py` (old implementation)
 
 ### Code Statistics
 

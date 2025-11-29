@@ -21,19 +21,19 @@ Football-league-management/
 │   ├── scheduling/                         # Round-robin algorithm (cyclomatic ≥10)
 │   └── ui/                                 # Integrated CLI application
 │
-├── member_a_mahir/                         # 9 user stories (A1-A9)
+├── member_a_Neel/                         # 9 user stories (A1-A9)
 │   ├── league_manager.py                   # League & team lifecycle
 │   └── __init__.py
 │
-├── member_b_abhishek/                      # 9 user stories (B1-B9)
+├── member_b_Mahir/                      # 9 user stories (B1-B9)
 │   ├── fixture_scheduler.py               # Scheduling engine
 │   └── __init__.py
 │
-├── member_c_neel/                          # 9 user stories (C1-C9)
+├── member_c_Abhishek/                          # 9 user stories (C1-C9)
 │   ├── results_manager.py                 # Results & rankings
 │   └── __init__.py
 │
-├── member_d_dhawal/                        # 9 user stories (D1-D9)
+├── member_d_Dhawal/                        # 9 user stories (D1-D9)
 │   ├── diagnostics_engine.py              # Diagnostics & analytics
 │   └── __init__.py
 │
@@ -309,10 +309,10 @@ Each member's code:
 ## 📞 Support
 
 For questions about:
-- **League Management** → Check `member_a_mahir/`
-- **Scheduling** → Check `member_b_abhishek/`
-- **Results & Rankings** → Check `member_c_neel/`
-- **Metrics & Testing** → Check `member_d_dhawal/`
+- **League Management** → Check `member_a_Neel/`
+- **Scheduling** → Check `member_b_Mahir/`
+- **Results & Rankings** → Check `member_c_Abhishek/`
+- **Diagnostics & Testing** → Check `member_d_Dhawal/`
 - **Integration** → Check `INTEGRATION.md`
 - **Overall Project** → Check `README.md`
 

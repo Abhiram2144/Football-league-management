@@ -7,10 +7,10 @@ A comprehensive Football League Management System implementing Agile, software m
 
 ## Team Members
 
-- **Mahir** - League & Team Management (Member A)
-- **Abhishek** - Scheduling Engine & Constraints (Member B)
-- **Neel** - Ranking, Results & Presentation (Member C)
-- **Dhawal** - Metrics, Testing & Symbolic/Concolic Analysis (Member D)
+- **Neel** - League & Team Management (Member A)
+- **Mahir** - Scheduling Engine & Constraints (Member B)
+- **Abhishek** - Ranking, Results & Presentation (Member C)
+- **Dhawal** - Diagnostics, Testing & Symbolic/Concolic Analysis (Member D)
 
 ## Project Structure
 
@@ -22,10 +22,10 @@ root/
 │   └── ui/                       # CLI integration layer
 ├── data/
 │   └── diagnostics/              # Diagnostic reports and analytics output
-├── member_a_mahir/               # League & Team Management Module
-├── member_b_abhishek/            # Scheduling Engine Module
-├── member_c_neel/                # Results & Ranking Module
-├── member_d_dhawal/              # Metrics & Testing Module
+├── member_a_Neel/                # League & Team Management Module
+├── member_b_Mahir/               # Scheduling Engine Module
+├── member_c_Abhishek/            # Results & Ranking Module
+├── member_d_Dhawal/              # Diagnostics & Testing Module
 ├── tests/                        # Test suites
 │   ├── blackbox/                 # Black-box tests
 │   └── whitebox/                 # White-box tests
@@ -39,7 +39,7 @@ root/
 
 ## Features by Member
 
-### Member A (Mahir) - League & Team Management
+### Member A (Neel) - League & Team Management
 - ✅ A1: Create League
 - ✅ A2: Add Team
 - ✅ A3: Validate Duplicate Teams
@@ -50,7 +50,7 @@ root/
 - ✅ A8: Export League State
 - ✅ A9: Validate League Configuration Before Scheduling
 
-### Member B (Abhishek) - Scheduling Engine
+### Member B (Mahir) - Scheduling Engine
 - ✅ B1: Generate Round-Robin Fixtures
 - ✅ B2: Generate Home/Away Rotation
 - ✅ B3: Week-by-Week Schedule Generation
@@ -61,7 +61,7 @@ root/
 - ✅ B8: Team-Specific Fixture View
 - ✅ B9: Auto-Regenerate Fixtures After Team Changes
 
-### Member C (Neel) - Ranking & Results
+### Member C (Abhishek) - Ranking & Results
 - ✅ C1: Record Match Result
 - ✅ C2: Update League Table
 - ✅ C3: Ranking Tie-Breaking Rules
@@ -134,22 +134,22 @@ Each member's code can be imported and used independently:
 
 ```python
 # Member A - League Management
-from member_a_mahir.league_manager import LeagueManager
+from member_a_Neel.league_manager import LeagueManager
 manager = LeagueManager()
 manager.create_league("Test League", "2024")
 
 # Member B - Scheduling
-from member_b_abhishek.fixture_scheduler import FixtureScheduler
+from member_b_Mahir.fixture_scheduler import FixtureScheduler
 scheduler = FixtureScheduler(league)
 scheduler.generate_fixtures()
 
 # Member C - Results
-from member_c_neel.results_manager import ResultsManager
+from member_c_Abhishek.results_manager import ResultsManager
 results = ResultsManager(league)
 results.view_table()
 
 # Member D - Diagnostics
-from member_d_dhawal.diagnostics_engine import DiagnosticsEngine
+from member_d_Dhawal.diagnostics_engine import DiagnosticsEngine
 diagnostics = DiagnosticsEngine(league)
 anomalies = diagnostics.detect_scheduling_anomalies()
 ```
@@ -165,7 +165,7 @@ pytest tests/ -v
 ### Run with Coverage
 
 ```powershell
-pytest --cov=src --cov=member_a_mahir --cov=member_b_abhishek --cov=member_c_neel --cov=member_d_dhawal --cov-report=html tests/
+pytest --cov=src --cov=member_a_Neel --cov=member_b_Mahir --cov=member_c_Abhishek --cov=member_d_Dhawal --cov-report=html tests/
 ```
 
 ### Coverage Report
@@ -179,7 +179,7 @@ start htmlcov/index.html
 
 ### Detect Scheduling Anomalies
 ```python
-from member_d_dhawal.diagnostics_engine import DiagnosticsEngine
+from member_d_Dhawal.diagnostics_engine import DiagnosticsEngine
 engine = DiagnosticsEngine(league)
 anomalies = engine.detect_scheduling_anomalies()
 ```

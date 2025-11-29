@@ -9,10 +9,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from member_a_mahir.league_manager import LeagueManager
-from member_b_abhishek.fixture_scheduler import FixtureScheduler
-from member_c_neel.results_manager import ResultsManager
-from member_d_dhawal.diagnostics_engine import DiagnosticsEngine
+from member_a_Neel.league_manager import LeagueManager
+from member_b_Mahir.fixture_scheduler import FixtureScheduler
+from member_c_Abhishek.results_manager import ResultsManager
+from member_d_Dhawal.diagnostics_engine import DiagnosticsEngine
 
 
 def create_demo_league():
@@ -23,7 +23,7 @@ def create_demo_league():
     print("=" * 70)
     
     # Member A: Create league and teams
-    print("\n[1/4] Member A (Mahir) - Creating League and Teams...")
+    print("\n[1/4] Member A (Neel) - Creating League and Teams...")
     mgr = LeagueManager()
     
     success, msg, league = mgr.create_league("Demo Premier League", "2024-2025")
@@ -45,7 +45,7 @@ def create_demo_league():
     print(f"  ✓ League saved to data/demo_league.json")
     
     # Member B: Generate fixtures
-    print("\n[2/4] Member B (Abhishek) - Generating Fixtures...")
+    print("\n[2/4] Member B (Mahir) - Generating Fixtures...")
     scheduler = FixtureScheduler(league)
     
     success, msg = scheduler.generate_fixtures("2024-12-01")
@@ -57,7 +57,7 @@ def create_demo_league():
         print(f"    Week {fixture['week']}: {fixture['home_team_name']} vs {fixture['away_team_name']}")
     
     # Member C: Record results and display table
-    print("\n[3/4] Member C (Neel) - Recording Results and Displaying Table...")
+    print("\n[3/4] Member C (Abhishek) - Recording Results and Displaying Table...")
     results_mgr = ResultsManager(league)
     
     # Record some sample results

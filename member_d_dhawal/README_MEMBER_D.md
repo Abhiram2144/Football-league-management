@@ -203,10 +203,10 @@ class TrendPrediction:
 ### Complete Workflow
 
 ```python
-from member_d_dhawal import DiagnosticsEngine
-from member_a_mahir import LeagueManager
-from member_b_abhishek import FixtureScheduler
-from member_c_neel import ResultsManager
+from member_d_Dhawal import DiagnosticsEngine
+from member_a_Neel import LeagueManager
+from member_b_Mahir import FixtureScheduler
+from member_c_Abhishek import ResultsManager
 
 # Setup league
 league_mgr = LeagueManager()
@@ -364,7 +364,7 @@ python member_d_demo.py
 
 ### Quick Verification
 ```powershell
-python -c "from member_d_dhawal import DiagnosticsEngine; d=DiagnosticsEngine(); print('OK')"
+python -c "from member_d_Dhawal import DiagnosticsEngine; d=DiagnosticsEngine(); print('OK')"
 ```
 
 ## Cyclomatic Complexity
@@ -420,7 +420,7 @@ For typical leagues (10-20 teams, 100-200 matches), performance is excellent (<1
 
 ---
 
-**Module:** member_d_dhawal  
+**Module:** member_d_Dhawal  
 **Author:** Dhawal  
 **Lines of Code:** ~1400+  
 **Functions:** 12 public methods  
